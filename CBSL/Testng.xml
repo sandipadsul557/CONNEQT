@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" parallel = "tests"  thread-count = "2" verbose="1" >
+  <test name="chromePage" >
+  <parameter name = "browser" value = "chrome"/>
+	<classes>
+       <class name="testrun.logiPageTest" />
+    </classes>
+ </test>
+   <test name="edgePage" >
+  <parameter name = "browser" value = "edge"/>
+
+    <classes>
+       <class name="testrun.logiPageTest" />
+    </classes>
+ </test>
+</suite>
+
